@@ -25,6 +25,9 @@
         "type": "git",
         "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
     },
+    "scripts": {
+        "build": "gulp"
+    },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.3.1",
         "bootstrap": "4.3.1",
@@ -35,12 +38,15 @@
     },
     "devDependencies": {
         "browser-sync": "2.24.7",
-        "gulp": "^3.9.1",
+        "gulp": "^4.0.2",
+        "gulp-cli": "^2.3.0",
         "gulp-autoprefixer": "6.0.0",
         "gulp-clean-css": "3.10.0",
         "gulp-header": "2.0.5",
         "gulp-rename": "1.4.0",
-        "gulp-sass": "4.0.1",
-        "gulp-uglify": "3.0.1"
+        "gulp-sass": "^5.1.0",
+        "gulp-uglify": "3.0.1",
+        "merge-stream": "^2.0.0",
+        "sass": "^1.80.0"
     }
 }
