@@ -1,52 +1,35 @@
 {
-    "title": "Creative",
-    "name": "startbootstrap-creative",
-    "version": "5.0.1",
-    "description": "Creative is a stylish one page HTML theme for Bootstrap.",
+    "title": "Chad Petersen Portfolio",
+    "name": "chad-petersen-portfolio",
+    "version": "6.0.0",
+    "description": "A modern Vue 3 portfolio application.",
     "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
+        "vue",
+        "portfolio",
+        "vite",
+        "responsive"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/creative",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-creative/issues",
-        "email": "feedback@startbootstrap.com"
-    },
+    "homepage": "/",
     "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
+    "author": "Chad Petersen",
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
+        "url": "https://github.com/chad-ptrsn/portfolio.git"
     },
     "scripts": {
-        "build": "gulp"
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "5.3.1",
-        "bootstrap": "4.3.1",
-        "jquery": "3.4.0",
-        "jquery.easing": "^1.4.1",
+        "@fortawesome/fontawesome-free": "^6.6.0",
+        "bootstrap": "^5.3.3",
         "magnific-popup": "^1.1.0",
-        "scrollreveal": "4.0.1"
+        "scrollreveal": "^4.0.9",
+        "vue": "^3.4.27"
     },
     "devDependencies": {
-        "browser-sync": "2.24.7",
-        "gulp": "^4.0.2",
-        "gulp-cli": "^2.3.0",
-        "gulp-autoprefixer": "6.0.0",
-        "gulp-clean-css": "3.10.0",
-        "gulp-header": "2.0.5",
-        "gulp-rename": "1.4.0",
-        "gulp-sass": "^5.1.0",
-        "gulp-uglify": "3.0.1",
-        "merge-stream": "^2.0.0",
-        "sass": "^1.80.0"
+        "@vitejs/plugin-vue": "^5.0.4",
+        "vite": "^5.2.11"
     }
 }
