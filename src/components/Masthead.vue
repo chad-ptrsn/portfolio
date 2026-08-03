@@ -26,7 +26,10 @@ const scrollTo = (selector) => {
 
 <style scoped>
 .masthead {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.65) 0%, rgba(118, 75, 162, 0.65) 100%),
+    url('/img/banner.jpg');
+  background-position: center center;
+  background-size: cover;
   min-height: 100vh;
 }
 

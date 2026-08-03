@@ -34,14 +34,14 @@ const projects = ref([
     id: 1,
     title: 'Healthpartners Wellbeing registration',
     url: 'https://www.healthpartners.com/wellbeing-registration/wellbeing/company-info',
-    image: 'img/portfolio/wb-registration.jpg',
+    image: '/img/portfolio/wb-registration.jpg',
     technologies: ['React', 'Redux', 'NodeJS', 'Webpack', 'Bootstrap', 'HP brand']
   },
   {
     id: 2,
     title: 'Healthpartners registration',
     url: 'https://www.healthpartners.com/public/register/signUpLanding.html',
-    image: 'img/portfolio/hp-registration.jpg',
+    image: '/img/portfolio/hp-registration.jpg',
     technologies: ['NodeJS', 'Webpack', 'Bootstrap', 'HP brand']
   }
 ])
