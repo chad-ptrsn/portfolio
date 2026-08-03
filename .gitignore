@@ -21,3 +21,6 @@ yarn-error.log*
 .env
 .env.local
 .env.*.local
+# Legacy assets and raw files
+img/
+*.ARW
