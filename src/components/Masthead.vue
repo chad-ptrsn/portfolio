@@ -7,7 +7,7 @@
             <strong>Chad Petersen</strong><br/>
           </h1>
           <h2>Front-End Engineer</h2>
-          <h3>Building thoughtful digital experiences that turn complex problems into simple, intuitive products. With 15 years of experience creating performant, accessible web applications across healthcare, outdoor adventure, and the web.</h3>
+          <p class="text-white-75 mb-4">Building thoughtful digital experiences that turn complex problems into simple, intuitive products. With 15 years of experience creating performant, accessible web applications across healthcare, outdoor adventure, and the web.</p>
           <a class="btn btn-primary btn-xl scroll-trigger" href="#about" @click="scrollTo('#about')">About me</a>
         </div>
       </div>
