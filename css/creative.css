@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Creative v5.0.1 (https://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2026 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
 
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Merriweather", "Helvetica Neue", Arial, sans-serif;
 }
 
 hr {
@@ -26,19 +26,16 @@ hr.light {
 
 a {
   color: #CD853F;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 a:hover {
-  color: peru;
+  color: rgb(80.3508345487%, 52.0560362988%, 24.547204667%);
 }
 
 @font-face {
   font-family: myFirstFont;
   src: url(../font/NationalPark-Regular.otf);
 }
-
 h1,
 h2,
 h3,
@@ -98,46 +95,38 @@ img::-moz-selection {
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  -webkit-transition: all 0.2s;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   transition: all 0.2s;
 }
-
 #mainNav .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
   color: #CD853F;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
 }
-
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: peru;
+  color: rgb(80.3508345487%, 52.0560362988%, 24.547204667%);
 }
-
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #212529;
 }
-
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
   color: #CD853F;
 }
-
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
   color: #CD853F !important;
   background-color: transparent;
 }
-
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
   background-color: transparent;
 }
-
 @media (min-width: 992px) {
   #mainNav {
     border-color: transparent;
@@ -168,7 +157,7 @@ img::-moz-selection {
     color: #CD853F;
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-    color: peru;
+    color: rgb(80.3508345487%, 52.0560362988%, 24.547204667%);
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -183,31 +172,25 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url(../img/banner.jpg);
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0, rgba(92, 77, 66, 0.8) 100%), url(../img/banner.jpg);
   background-position: center center;
   background-size: cover;
 }
-
 header.masthead hr {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
 header.masthead h1 {
   font-size: 2rem;
 }
-
 header.masthead p {
   font-weight: 300;
 }
-
 @media (min-width: 768px) {
   header.masthead p {
     font-size: 1.15rem;
   }
 }
-
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -219,7 +202,6 @@ header.masthead p {
     font-size: 3rem;
   }
 }
-
 @media (min-width: 1200px) {
   header.masthead h1 {
     font-size: 4rem;
@@ -244,7 +226,6 @@ header.masthead p {
   max-width: 650px;
   margin: 0 auto;
 }
-
 .portfolio-box .portfolio-box-caption {
   position: absolute;
   bottom: 0;
@@ -255,10 +236,8 @@ header.masthead p {
   opacity: 0;
   color: #fff;
   background: rgba(205, 133, 63, 0.9);
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
   position: absolute;
   top: 50%;
@@ -267,31 +246,25 @@ header.masthead p {
   transform: translateY(-50%);
   text-align: center;
 }
-
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   padding: 0 15px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
 }
-
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
 }
-
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   font-size: 18px;
 }
-
 .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
-
 .portfolio-box:focus {
   outline: none;
 }
-
 @media (min-width: 768px) {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
     font-size: 16px;
@@ -310,7 +283,7 @@ header.masthead p {
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 .btn-xl {
@@ -321,13 +294,10 @@ header.masthead p {
   background-color: #CD853F;
   border-color: #CD853F;
 }
-
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #c07832 !important;
+  background-color: rgb(75.4496840058%, 47.1560525036%, 19.6483552099%) !important;
 }
-
 .btn-primary:active, .btn-primary:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }

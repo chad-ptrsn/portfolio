@@ -1,2 +1,26 @@
 node_modules
 bower_components
+# Vite
+dist/
+.vite/
+
+# Build artifacts
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.*.local
+# Legacy assets and raw files
+img/
+*.ARW
