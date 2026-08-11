@@ -49,7 +49,7 @@
 }
 
 hr {
-  border-color: #667eea;
+  border-color: #CD853F;
   border-width: 3px;
   max-width: 80px;
   margin-left: auto;
@@ -57,22 +57,22 @@ hr {
 }
 
 a {
-  color: #667eea;
+  color: #CD853F;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #764ba2;
+  color: #c77a2d;
 }
 
 a i {
-  color: #667eea;
+  color: #CD853F;
   transition: color 0.3s ease;
 }
 
 a:hover i {
-  color: #764ba2;
+  color: #c77a2d;
 }
 
 p {

@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-primary text-white" id="about">
+  <section class="bg-dark text-white" id="about">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
@@ -20,8 +20,8 @@
 </script>
 
 <style scoped>
-.bg-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+.bg-dark {
+  background-color: #868e96 !important;
 }
 
 .section-heading {

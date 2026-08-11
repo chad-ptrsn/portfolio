@@ -65,7 +65,7 @@
 }
 
 hr {
-  border-color: #667eea;
+  border-color: #CD853F;
   border-width: 3px;
   max-width: 80px;
   margin-left: auto;
@@ -85,7 +85,11 @@ hr {
 }
 
 .service-box i {
-  color: #667eea;
+  color: #CD853F;
+}
+
+.text-primary {
+  color: #CD853F !important;
 }
 
 .service-box h3 {

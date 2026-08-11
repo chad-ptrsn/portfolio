@@ -49,7 +49,7 @@ const projects = ref([
 
 <style scoped>
 .bg-dark {
-  background-color: #212529 !important;
+  background-color: #868e96 !important;
 }
 
 .section-heading {
@@ -75,7 +75,7 @@ hr {
   border-radius: 0.5rem;
   overflow: hidden;
   transition: all 0.3s ease;
-  background-color: #2d3436;
+  background-color: #fff;
 }
 
 .card:hover {
@@ -89,7 +89,7 @@ hr {
 }
 
 .card-body {
-  color: #fff;
+  color: #212529;
 }
 
 .card-body p {

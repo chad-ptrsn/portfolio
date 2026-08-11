@@ -25,7 +25,7 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merriweather', serif;
+  font-family: inherit;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -55,14 +55,14 @@ p {
 }
 
 .btn-primary {
-  background-color: #667eea;
-  border-color: #667eea;
+  background-color: #CD853F;
+  border-color: #CD853F;
   color: #fff;
 }
 
 .btn-primary:hover {
-  background-color: #764ba2;
-  border-color: #764ba2;
+  background-color: #c77a2d;
+  border-color: #c77a2d;
   color: #fff;
 }
 
@@ -82,7 +82,7 @@ section h2 {
 }
 
 section hr {
-  border: 3px solid #667eea;
+  border: 3px solid #CD853F;
   max-width: 80px;
   margin: 2rem auto;
 }
@@ -111,7 +111,7 @@ section hr {
 }
 
 .bg-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #868e96 !important;
 }
 
 /* Responsive */
@@ -148,10 +148,22 @@ section hr {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #667eea;
+  background: #CD853F;
   border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #764ba2;
+  background: #c77a2d;
+}
+
+.text-primary {
+  color: #CD853F !important;
+}
+
+a {
+  color: #CD853F;
+}
+
+a:hover {
+  color: #c77a2d;
 }
