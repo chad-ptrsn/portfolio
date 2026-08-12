@@ -3,9 +3,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
-          <h2 class="section-heading">Let's Get In Touch!</h2>
+          <h2 class="section-heading">Let's connect!</h2>
           <hr class="my-4">
-          <p class="mb-5">Ready to start your next project? That's great! Send me an email and I'll get back to you!</p>
+          <p class="mb-5">Interested in working together or have an opportunity you'd like to discuss? Send me a message.</p>
         </div>
       </div>
       <div class="row">
