@@ -3,6 +3,7 @@ bower_components
 # Vite
 dist/
 .vite/
+.wrangler/
 
 # Build artifacts
 npm-debug.log*
