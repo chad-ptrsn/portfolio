@@ -28,7 +28,7 @@
           </a>
         </div>
         <div class="col-lg-3 mx-auto text-center">
-          <a href="https://github.com/chadptrsn" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/chad-ptrsn" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github-square fa-3x mb-3"></i>
             <p>GitHub</p>
           </a>

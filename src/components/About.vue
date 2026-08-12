@@ -5,11 +5,17 @@
         <div class="col-lg-8 mx-auto text-center">
           <h2 class="section-heading mb-4">A little bit about me</h2>
           <hr class="light my-4">
-          <p class="text-white-75 mb-4">
-            I began as a freelance developer in 2009. I started creating brochure websites for people I knew or companies I found to be interesting. Currently I work in the health care industry, building and maintaining web applications for authenticated members of the insurance company. These applications are multi-branded, multi-homed code bases that are dynamic, responsive, scalable and accessible. Turning complex problems into simple, beautiful and intuitive applications is something that I enjoy. I have a strong passion for clean and reusable code along with a need to create a great user experience.
+            <p class="text-white-75 mb-4">
+              I'm a frontend software engineer with 15 years of experience building web applications that balance clean architecture, thoughtful user experiences, and maintainable code.
+              Throughout my career I've worked across legacy platforms and modern JavaScript frameworks, helping teams deliver new features, improve existing applications, and modernize frontend experiences.
+            </p>
+            <hr class="light my-4">
+            <p class="text-white-75 mb-4">
+              Most recently I've been building applications with TypeScript, Nuxt, and Vue while working in collaborative Agile environments alongside designers, QA engineers, and backend developers.
+              I enjoy solving complex problems, simplifying user workflows, and writing code that's easy to understand and maintain. Whether I'm implementing new features, improving performance, or refactoring existing applications, I care about building software that provides real value to the people using it.
           </p>
           <hr class="light my-4"/>
-          <p class="text-white-75 mb-4">When I'm not coding, I enjoy the outdoors as much as possible. Fly fishing, kayaking, camping, snowboarding, hiking and travel are all of interest to me.</p>
+          <p class="text-white-75 mb-4">Outside of work I'm passionate about the outdoors. Trail running, mountain biking, hiking, snowboarding, fly fishing, and exploring remote places have become a major influence on where I want to take my career next. I'm actively expanding my skills in mapping technologies and location-based applications while building personal projects that combine software development with outdoor adventure.</p>
         </div>
       </div>
     </div>
