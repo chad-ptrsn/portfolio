@@ -1,5 +1,5 @@
 <template>
-  <section v-if="project" class="project-detail">
+  <div v-if="project" ref="detailRef" tabindex="-1" class="project-detail">
     <div class="detail-header">
       <div>
         <p class="eyebrow">{{ project.technologies.join(' / ') }}</p>
@@ -44,10 +44,12 @@
         <p>{{ project.learned }}</p>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script setup>
+import { ref, watch, nextTick } from 'vue'
+
 const props = defineProps({
   project: {
     type: Object,
@@ -56,6 +58,26 @@ const props = defineProps({
 })
 
 defineEmits(['close'])
+
+const detailRef = ref(null)
+const scrollOffset = 190
+
+watch(
+  () => props.project,
+  async (project) => {
+    if (!project) return
+
+    await nextTick()
+
+    const element = detailRef.value
+    if (!element) return
+
+    const top = element.getBoundingClientRect().top + window.scrollY - scrollOffset
+    window.scrollTo({ top, behavior: 'smooth' })
+    element.focus()
+  },
+  { immediate: true }
+)
 </script>
 
 <style scoped>
@@ -155,7 +177,7 @@ defineEmits(['close'])
 
 .decision-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 0.75rem;
 }
 

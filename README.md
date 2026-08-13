@@ -1,74 +1,108 @@
-# [Start Bootstrap - Creative](https://startbootstrap.com/template-overviews/creative/)
+# Chad Petersen Portfolio - Vue 3 Edition
 
-[Creative](http://startbootstrap.com/template-overviews/creative/) is a one page creative theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+A modern, responsive portfolio built with **Vue 3** and **Vite**, deployed on Cloudflare Pages.
 
-## Preview
+## Tech Stack
 
-[![Creative Preview](https://startbootstrap.com/assets/img/templates/creative.jpg)](https://blackrockdigital.github.io/startbootstrap-creative/)
+- **Vue 3** - Progressive JavaScript framework
+- **Vite** - Next-generation frontend build tool
+- **Bootstrap 5** - CSS framework for responsive design
+- **Font Awesome 6** - Icon library
+- **Magnific Popup** - Responsive lightbox plugin
+- **ScrollReveal** - Scroll animations
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-creative/)**
+## Development
 
-## Status
+### Prerequisites
+- Node.js 18+ and npm
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-creative/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-creative.svg)](https://www.npmjs.com/package/startbootstrap-creative)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-creative.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-creative)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-creative/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-creative)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-creative/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-creative?type=dev)
+### Installation
 
-## Download and Installation
+```bash
+npm install
+```
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/creative/)
-* Install via npm: `npm i startbootstrap-creative`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-creative.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-creative)
+### Local Development Server
 
-## Usage
+```bash
+npm run dev
+```
 
-### Basic Usage
+This starts a local dev server at `http://localhost:3000` with hot module replacement (HMR).
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+### Build for Production
 
-### Advanced Usage
+```bash
+npm run build
+```
 
-After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+This creates an optimized production build in the `dist/` directory.
 
-#### Gulp Tasks
+### Preview Production Build
 
-- `gulp` the default task that builds everything
-- `gulp dev` browserSync opens the project in your default browser and live reloads when changes are made
-- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
-- `gulp js` minifies the themes JS file
-- `gulp vendor` copies dependencies from node_modules to the vendor directory
+```bash
+npm run preview
+```
 
-You must have npm and Gulp installed globally on your machine in order to use these features.
+## Project Structure
 
-## Troubleshooting and Help
+```
+src/
+├── components/
+│   ├── NavBar.vue        # Navigation bar with scroll effects
+│   ├── Masthead.vue      # Hero section
+│   ├── About.vue         # About section
+│   ├── Services.vue      # Skills section
+│   ├── Portfolio.vue     # Projects showcase
+│   └── Contact.vue       # Contact section
+├── styles/
+│   └── creative.css      # Global styles
+├── App.vue               # Root component
+└── main.js               # Application entry point
 
-Start Bootstrap has a public Slack channel which is a great place to ask questions about this template and all things related to Start Bootstrap.
+public/
+├── img/                  # Portfolio images
+└── resume/              # Resume PDF
 
-**[Click here to join the Slack channel!](https://startbootstrap-slack.herokuapp.com/)**
+index.html               # HTML template
+vite.config.js          # Vite configuration
+```
 
-## Bugs and Issues
+## Deployment to Cloudflare Pages
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-creative/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/creative/).
+### Prerequisites
+- GitHub repository connected to Cloudflare Pages
+- Cloudflare Pages project created
 
-## About
+### Configuration
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+Cloudflare Pages will automatically detect the build settings:
 
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
+- **Framework**: None (using Vite)
+- **Build command**: `npm run build`
+- **Build output directory**: `dist/`
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+### Deploy
 
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+Simply push to your connected GitHub branch. Cloudflare Pages will:
+1. Run `npm install`
+2. Run `npm run build`
+3. Deploy the contents of `dist/` to Cloudflare's CDN
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+## Features
 
-## Copyright and License
+- ✨ Smooth scroll navigation
+- 📱 Fully responsive design
+- ♿ Accessible HTML and components
+- 🎨 Modern gradient design
+- 🚀 Fast performance with Vite
+- 📦 Optimized production builds
+- 🔄 Hot module replacement in development
 
-Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-creative/blob/gh-pages/LICENSE) license.
+## License
+
+MIT
+
+## Author
+
+Chad Petersen
