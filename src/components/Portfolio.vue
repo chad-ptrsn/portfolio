@@ -139,7 +139,15 @@ hr {
   margin-right: auto;
 }
 
+.row > .col-lg-6,
+.row > .col-sm-6 {
+  display: flex;
+}
+
 .card {
+  display: flex;
+  width: 100%;
+  height: 100%;
   border: none;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -148,8 +156,8 @@ hr {
 }
 
 .card:hover {
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
-  transform: translateY(-10px);
+  box-shadow: none;
+  transform: none;
 }
 
 .card-img-top {
@@ -158,6 +166,9 @@ hr {
 }
 
 .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   color: #212529;
 }
 
@@ -199,7 +210,7 @@ hr {
 }
 
 .project-cta {
-  margin-top: 1rem;
+  margin-top: auto;
   border: none;
   background: #CD853F;
   color: white;

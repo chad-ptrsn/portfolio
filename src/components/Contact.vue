@@ -10,7 +10,7 @@
       </div>
       <div class="row">
         <div class="col-lg-3 mx-auto text-center">
-          <a href="resume/Chad_Petersen_Resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="resume/Chad-Petersen-resume.pdf" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-file fa-3x mb-3"></i>
             <p>View/download resume</p>
           </a>
