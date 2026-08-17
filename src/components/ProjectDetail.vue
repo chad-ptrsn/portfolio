@@ -22,7 +22,18 @@
 
       <div class="panel">
         <p class="panel-label">THE APPROACH</p>
-        <div class="architecture-box">Architecture / workflow</div>
+        <img
+          v-if="project.id === 1"
+          src="/online-appointment-scheduling-architecture.svg"
+          alt="Online appointment scheduling architecture diagram"
+          class="architecture-image"
+        />
+        <img
+          v-else-if="project.id === 2"
+          src="/member-patient-registration-platform-flow.svg"
+          alt="Member and patient registration platform flow diagram"
+          class="architecture-image"
+        />
         <p>{{ project.approach }}</p>
       </div>
 
@@ -165,7 +176,17 @@ watch(
   line-height: 1.7;
 }
 
-.architecture-box,
+.architecture-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(33, 37, 41, 0.12);
+  border-radius: 0.5rem;
+  background: #f8f9fa;
+}
+
 .result-placeholder {
   display: flex;
   align-items: center;

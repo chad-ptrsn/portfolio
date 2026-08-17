@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 720" role="img" aria-labelledby="title desc">
+  <title id="title">Member &amp; Patient Registration Platform Flow</title>
+  <desc id="desc">A user enters demographic information, which is sent to Spring Boot REST APIs. The platform checks whether an account exists. Existing users sign in. New users create an account, authenticate, and then sign in.</desc>
+
+  <defs>
+    <linearGradient id="canvas" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF4FF"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0F172A" flood-opacity=".10"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#3B82F6"/>
+    </marker>
+    <style>
+      .eyebrow { fill: #2563EB; font: 700 16px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 2.5px; }
+      .heading { fill: #0F172A; font: 700 34px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .subheading { fill: #64748B; font: 400 17px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .step { fill: #FFFFFF; stroke: #CBD5E1; stroke-width: 1.5; }
+      .step-accent { fill: #EFF6FF; stroke: #60A5FA; stroke-width: 1.5; }
+      .step-success { fill: #F0FDF4; stroke: #4ADE80; stroke-width: 1.5; }
+      .label { fill: #0F172A; font: 700 19px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; text-anchor: middle; }
+      .detail { fill: #64748B; font: 400 14px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; text-anchor: middle; }
+      .number { fill: #FFFFFF; font: 700 13px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; text-anchor: middle; dominant-baseline: middle; }
+      .branch { fill: #2563EB; font: 700 14px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 1.5px; }
+      .connector { fill: none; stroke: #3B82F6; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1440" height="720" rx="28" fill="url(#canvas)"/>
+  <g transform="translate(76 70)">
+    <text class="eyebrow">PLATFORM FLOW</text>
+    <text class="heading" y="44">Member &amp; Patient Registration</text>
+    <text class="subheading" y="76">A simple, secure path from first details to an authenticated account.</text>
+  </g>
+
+  <!-- Connectors are drawn before cards so arrowheads terminate cleanly at their edges. -->
+  <g aria-hidden="true">
+    <path class="connector" d="M252 311H300"/>
+    <path class="connector" d="M492 311H540"/>
+    <path class="connector" d="M742 311H790"/>
+    <path class="connector" d="M970 311H1025V252H1070"/>
+    <path class="connector" d="M880 401V493"/>
+    <path class="connector" d="M1070 562H1120"/>
+  </g>
+
+  <!-- Main flow -->
+  <g filter="url(#shadow)">
+    <rect class="step" x="76" y="252" width="176" height="118" rx="16"/>
+    <rect class="step" x="300" y="252" width="192" height="118" rx="16"/>
+    <rect class="step-accent" x="540" y="252" width="202" height="118" rx="16"/>
+  </g>
+  <g aria-hidden="true">
+    <circle cx="104" cy="280" r="15" fill="#2563EB"/><text class="number" x="104" y="280">1</text>
+    <circle cx="328" cy="280" r="15" fill="#2563EB"/><text class="number" x="328" y="280">2</text>
+    <circle cx="568" cy="280" r="15" fill="#2563EB"/><text class="number" x="568" y="280">3</text>
+  </g>
+  <text class="label" x="164" y="314">User</text>
+  <text class="detail" x="164" y="339">Starts registration</text>
+  <text class="label" x="396" y="307">Demographic</text>
+  <text class="label" x="396" y="331">Information</text>
+  <text class="detail" x="396" y="352">Enter member details</text>
+  <text class="label" x="641" y="307">Spring Boot</text>
+  <text class="label" x="641" y="331">REST APIs</text>
+  <text class="detail" x="641" y="352">Validate &amp; look up account</text>
+
+  <!-- Decision -->
+  <g filter="url(#shadow)">
+    <path d="M880 221 L970 311 L880 401 L790 311 Z" fill="#FEFCE8" stroke="#FACC15" stroke-width="1.5"/>
+  </g>
+  <text class="label" x="880" y="305">Existing</text>
+  <text class="label" x="880" y="329">Account?</text>
+
+  <!-- Existing-user sign in -->
+  <g filter="url(#shadow)">
+    <rect class="step-success" x="1070" y="193" width="240" height="118" rx="16"/>
+  </g>
+  <g aria-hidden="true"><circle cx="1098" cy="221" r="15" fill="#16A34A"/><text class="number" x="1098" y="221">4</text></g>
+  <text class="label" x="1190" y="252">Sign In</text>
+  <text class="detail" x="1190" y="277">Access existing account</text>
+  <text class="branch" x="1016" y="282">YES</text>
+
+  <!-- New-user flow -->
+  <g filter="url(#shadow)">
+    <rect class="step" x="690" y="493" width="380" height="138" rx="16"/>
+    <rect class="step-accent" x="1120" y="493" width="170" height="138" rx="16"/>
+    <rect class="step-success" x="1320" y="493" width="90" height="138" rx="16"/>
+  </g>
+  <g aria-hidden="true">
+    <circle cx="718" cy="521" r="15" fill="#2563EB"/><text class="number" x="718" y="521">4</text>
+    <circle cx="1148" cy="521" r="15" fill="#2563EB"/><text class="number" x="1148" y="521">5</text>
+    <circle cx="1348" cy="521" r="15" fill="#16A34A"/><text class="number" x="1348" y="521">6</text>
+  </g>
+  <text class="label" x="880" y="554">Create Account</text>
+  <text class="detail" x="880" y="580">Provision a new member profile</text>
+  <text class="label" x="1205" y="554">Authenticate</text>
+  <text class="detail" x="1205" y="580">Establish session</text>
+  <text class="label" x="1365" y="550">Sign</text>
+  <text class="label" x="1365" y="574">In</text>
+  <text class="branch" x="902" y="457">NO</text>
+
+  <text x="76" y="674" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="13">Member &amp; Patient Registration Platform</text>
+</svg>
