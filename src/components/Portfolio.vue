@@ -144,6 +144,10 @@ hr {
   display: flex;
 }
 
+.row {
+  gap: 1rem 0;
+}
+
 .card {
   display: flex;
   width: 100%;
@@ -231,6 +235,10 @@ a {
 }
 
 @media (max-width: 768px) {
+  .row {
+    gap: 1rem 0;
+  }
+
   .section-heading {
     font-size: 1.75rem;
   }

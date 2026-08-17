@@ -60,7 +60,17 @@ const props = defineProps({
 defineEmits(['close'])
 
 const detailRef = ref(null)
-const scrollOffset = 190
+
+const scrollToProjectDetail = () => {
+  const element = detailRef.value
+  if (!element) return
+
+  const offset = window.innerWidth <= 768 ? 70 : 110
+  const top = element.getBoundingClientRect().top + window.scrollY - offset
+
+  window.scrollTo({ top, behavior: 'smooth' })
+  element.focus({ preventScroll: true })
+}
 
 watch(
   () => props.project,
@@ -68,13 +78,7 @@ watch(
     if (!project) return
 
     await nextTick()
-
-    const element = detailRef.value
-    if (!element) return
-
-    const top = element.getBoundingClientRect().top + window.scrollY - scrollOffset
-    window.scrollTo({ top, behavior: 'smooth' })
-    element.focus()
+    scrollToProjectDetail()
   },
   { immediate: true }
 )
