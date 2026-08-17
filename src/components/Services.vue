@@ -14,11 +14,12 @@
             <h3 class="mb-3">Code</h3>
             <ul class="list-unstyled text-muted mb-0">
               <li>HTML</li>
-              <li>SCSS</li>
-              <li>Vue</li>
+              <li>CSS/SCSS</li>
+              <li>VueJS</li>
               <li>React</li>
               <li>JavaScript</li>
               <li>NodeJS</li>
+              <li>Typescript</li>
             </ul>
           </div>
         </div>
@@ -42,6 +43,7 @@
             <h3 class="mb-3">UI</h3>
             <ul class="list-unstyled text-muted mb-0">
               <li>Responsive design</li>
+              <li>Web components</li>
               <li>Rapid prototyping</li>
               <li>Reusable components</li>
               <li>UI patterns</li>
