@@ -25,3 +25,5 @@ yarn-error.log*
 # Legacy assets and raw files
 img/
 *.ARW
+.DS_Store
+vendor/

@@ -46,7 +46,7 @@
 
       <div class="panel">
         <p class="panel-label">THE RESULT</p>
-        <div class="result-placeholder">Screenshots / outcome</div>
+        <!-- <div class="result-placeholder">Screenshots / outcome</div> -->
         <p>{{ project.result }}</p>
       </div>
 
